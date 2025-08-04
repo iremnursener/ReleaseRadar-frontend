@@ -1,10 +1,8 @@
 import React from 'react';
-import UploadPage from './Components/UploadPage';
-
-
+import UploadPage from './UploadPage';
 
 function App() {
-  return <UploadPage />;
+  return <UploadPage/>;
 }
 
 export default App;

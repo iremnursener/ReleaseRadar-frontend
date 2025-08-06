@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('images/5.jpg'); /* public/images içine koy */
+  background-size: cover; /* ekranı kapla */
+  background-position: center; /* ortala */
+  background-repeat: no-repeat; /* tekrar etme */
+  min-height: 100vh; /* tam ekran yükseklik */
+}

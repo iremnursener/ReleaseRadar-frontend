@@ -80,17 +80,48 @@ const UploadPage = () => {
 
     return (
         <Box sx={{ maxWidth: '900px', mx: 'auto', mt: 6, p: 2 }}>
-            <Typography variant="h5" gutterBottom>
-                Yapı Kredi Release Takibi Bilgilendirme Otomasyonu Sistemi
-            </Typography>
-            <Typography variant="body1" gutterBottom>
-                Aşağıdaki dosya yükleme kısmına yıllık takvimi excel formatında yükleyin ve kaydet butonuna basın.
-            </Typography>
-            <Typography variant="body2" color="text.secondary" gutterBottom>
-                Yüklenen dosya sisteme kaydedildikten sonra gerekli birimlere tarihlerden 5 gün öncesinde mail yoluyla hatırlatma yollanır.
-            </Typography>
+      <Paper
+          elevation={3}
+          sx={{
+              p: 2,
+              mb: 3,
+              width: '100%', // alttaki kutularla aynı genişlik
+              backgroundColor: '#f5f9ff',
+              borderRadius: 2,
+              border: '1px solid #d0d7e2',
+              textAlign: 'left', // sola hizala
+              boxSizing: 'border-box'
+          }}
+      >
+          <Typography
+              variant="h6"
+              gutterBottom
+              sx={{
+                  color: '#004587',
+                  fontWeight: 'bold',
+              }}
+          >
+              Yapı Kredi Release Takibi Bilgilendirme Otomasyonu Sistemi
+          </Typography>
 
-            <Box sx={{ display: 'flex', gap: 2, mt: 4, flexWrap: 'wrap' }}>
+          <Typography variant="body2" gutterBottom>
+              Aşağıdaki dosya yükleme kısmına <strong>yıllık takvimi</strong> Excel formatında yükleyin
+              ve <strong>Kaydet</strong> butonuna basın.
+          </Typography>
+
+          <Typography
+              variant="caption"
+              sx={{
+                  color: 'text.secondary',
+                  fontStyle: 'italic'
+              }}
+          >
+              Yüklenen dosya sisteme kaydedildikten sonra gerekli birimlere tarihlerden
+              <strong> 5 gün öncesinde</strong> mail yoluyla hatırlatma yollanır.
+          </Typography>
+      </Paper>
+
+            <Box sx={{ display: 'flex', gap: 2, mt: 8, flexWrap: 'wrap' }}>
                 <Paper
                     {...getRootProps()}
                     variant="outlined"
